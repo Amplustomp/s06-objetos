@@ -27,12 +27,12 @@ export class C03PersonaListarComponent {
 
    lPersonasPais: any[] = [
     {
-      "name": "Douglas  Pace",
+      "name": "Sergio",
       "age": 35,
       "country": 'MARS'
     },
     {
-      "name": "Mcleod  Mueller",
+      "name": "Roxana",
       "age": 32,
       "country": 'USA'
     },

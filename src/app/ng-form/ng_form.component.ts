@@ -37,17 +37,17 @@ export class C03PersonaListarComponent {
       "country": 'USA'
     },
     {
-      "name": "Day  Meyers",
+      "name": "Liliana",
       "age": 21,
       "country": 'HK'
     },
     {
-      "name": "Aguirre  Ellis",
+      "name": "Abby",
       "age": 34,
       "country": 'UK'
     },
     {
-      "name": "Cook  Tyson",
+      "name": "Locky",
       "age": 32,
       "country": 'USA'
     }

@@ -13,6 +13,7 @@ export class C03PersonaListarComponent {
  public lPersonas:String[] =["Sergio","Roxana","Liliana","Abby"]
  public lPersonasEliminados:String[]=[]
 
+
    // Método que elimina el primer registro del arreglo
    borrarPrimerPersona(){
     // shift devuelve string o undefined, por eso colocamos || ''
@@ -53,7 +54,7 @@ export class C03PersonaListarComponent {
     }
   ];
 
-  selectedValue: string= 'Two';  //ngSwitch
+selectedValue: string= 'Two';  //ngSwitch
 
 }
 

@@ -6,6 +6,7 @@ import { PersonaDatosComponent } from './persona/persona.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContadorComponent } from './contador/contador.component';
 import { C03PersonaListarComponent } from './ng-form/ng_form.component';
+import { C04ModuloModule } from './c04_modulos/c04-modulo.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { C03PersonaListarComponent } from './ng-form/ng_form.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    C04ModuloModule
   ],
   providers: [],
   bootstrap: [AppComponent]

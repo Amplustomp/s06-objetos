@@ -35,7 +35,9 @@ export class MainPageComponent {
         // Rescatamos los valores por medio del evento
         // Problema de las posiciones de los campos
 
-        console.log(this.lPersonas.find(e => e.run === evento.srcElement[0].value))
+        //console.log(this.lPersonas.sort(function(a, b){return a.run - b.run}).find(e => e.run === evento.srcElement[0].value))
+
+        this.lPersonas.sort(function(a, b){return a.run - b.run});
 
         if (this.lPersonas.find(e => e.run === evento.srcElement[0].value)) {
             console.log('valor ya existe')
@@ -59,7 +61,7 @@ export class MainPageComponent {
             apMaterno: evento.srcElement[3].value,
             edad: evento.srcElement[4].value,
           }  
-
+          this.lPersonas.sort(function(a, b){return a.run - b.run});
         }
         }
 

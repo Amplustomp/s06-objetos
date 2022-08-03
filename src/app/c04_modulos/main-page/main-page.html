@@ -7,3 +7,68 @@
 <app-mi-serv-add></app-mi-serv-add>
 
 <app-mi-serv-lista></app-mi-serv-lista>
+
+<div class="row">
+    <div class="col">
+        <h3>Arreglo de Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let per of lPersonas">
+                {{per.nombres}} - {{per.apPaterno}}- {{per.apMaterno}} -{{per.edad | number}}
+            </li>
+
+        </ul>
+    </div>
+</div> 
+
+
+<!-- Registro persona_n1-->
+<div >
+    <h3>Registro Personajes n1</h3>
+    <table border="1">
+        <tr><td>nombres</td><td> :{{persona_n1.nombres}}:</td></tr>
+        <tr><td>apMaterno </td><td>:{{persona_n1.apMaterno}}:</td></tr>
+        <tr><td>apPaterno </td><td>:{{persona_n1.apPaterno}}:</td></tr>
+        <tr><td>edad </td><td>:{{persona_n1.edad}}:</td></tr>
+    </table>
+</div>
+
+<hr>
+<div class="row">
+    <div class="col">
+      <h3>Agregar por medio de Formulario Event</h3>
+      <!-- Por medio de subnit ejecutamos el evento agregarEvent($event)-->
+      <form (submit)="agregarEvent( $event )">
+        <table border="1">
+            <!--[value] los corchetes indican, que existe una variable del lado de la clase"-->
+            <tr><td>Run</td>
+                <td>
+                    <input type="text" placeholder="Run" [value]="persona_n1.run"/>
+                </td>
+            </tr>
+            <tr><td>nombres</td>
+                <td>
+                    <input type="text" placeholder="Nombre" [value]="persona_n1.nombres"/>
+                </td>
+            </tr>
+            <tr><td>Paterno</td>
+                <td>
+                    <input type="text" placeholder="Ape.Paterno" [value]="persona_n1.apPaterno"/>
+                </td>
+            </tr>
+            <tr><td>Materno</td>
+                <td>
+                    <input type="text" name="xx" placeholder="Ape.Materno" [value]="persona_n1.apMaterno"/>
+                </td>
+            </tr>
+            <tr><td>Edad</td>
+                <td>
+                    <input type="text"  name="edad" placeholder="Edad" [value]="persona_n1.edad"/>
+                </td>
+            </tr>
+        </table>
+        <!--Por medio del Button ejecutamos el Submit del Formulario-->
+        <button type="submit">Agregar Submit HTML</button>
+    </form>
+    </div>    
+</div>

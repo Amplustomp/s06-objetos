@@ -10,9 +10,9 @@ export class MiServAddComponent {
   // Utilizamos iPersona, recordar Importar el archivo de la interface
   persona_serv:iPersona= {
     run:1,
-    nombres:"Sergio Servicio",
-    apPaterno:"Service Cortés",
-    apMaterno:"Materno Pérez",
+    nombres:"Sergio",
+    apPaterno:"Cortés",
+    apMaterno:"Pérez",
     edad:33,
   }
 

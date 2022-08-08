@@ -15,7 +15,7 @@ export class PersonaServices{
     // Al poner private no puedo ver desde los demas
     // Iniciamos el arreglo con dos registros, solo para listar la primera vez
     private _lPersonas_SS:iPersona[]=[
-        {nombres:"Sergio",apPaterno:"Cortés",apMaterno:"Pérez",edad:33,run:117}
+        {nombres:"Carlos ",apPaterno:"Vega",apMaterno:"Osorio",edad:33,run:109}
                         ,{nombres:"Pedro",apMaterno:"Pereira",edad:209,apPaterno:"Pinto",run:10}
     ]
 

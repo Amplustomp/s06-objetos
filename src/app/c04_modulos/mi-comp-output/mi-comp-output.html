@@ -1,2 +1,23 @@
 <hr>
 <h3>Módulo Output</h3>
+
+<hr>
+<div class="row">
+    <div class="col">
+        <h3>Agregar Output</h3>
+        <!-- If ngModel is used  within a form tag,
+            cuando no le colocas name al input
+        -->
+        <hr>
+            <!-- importamos FormMoule-->
+            <form (ngSubmit)="agregarSinEvento()"> 
+                <!--Observe que utilizamos ngModel => persona_ot-->
+                <input type="text" name="run" placeholder="Rut" [(ngModel)]="persona_ot.run"/><br>
+                <input type="text" name="nombres" placeholder="Nombre" [(ngModel)]="persona_ot.nombres" /><br>
+                <input type="text" name="apPaterno" placeholder="Ape.Paterno" [(ngModel)]="persona_ot.apPaterno"/><br>
+                <input type="text" name="apMaterno" placeholder="Ape.Materno" [(ngModel)]="persona_ot.apMaterno"/><br>
+                <input type="text"  name="edad" placeholder="Edad" [(ngModel)]="persona_ot.edad"/><br>
+                <button >Agregar</button>
+            </form>
+    </div>        
+</div>

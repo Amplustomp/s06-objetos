@@ -4,6 +4,7 @@ import { MainPageComponent } from './main-page/main-page';
 import { MiCompInputComponent } from './mi-comp-input/mi-comp-input';
 import { MiCompOutputComponent } from './mi-comp-output/mi-comp-output';
 import { C05ModuloModule } from '../c05_modulos/c05-componentes.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { C05ModuloModule } from '../c05_modulos/c05-componentes.module';
   ],
   imports: [
     CommonModule,
-    C05ModuloModule
+    C05ModuloModule,
+    FormsModule
   ]
 })
 export class C04ModuloModule { }

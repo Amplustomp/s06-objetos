@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { __values } from 'tslib';
 import { iPersona } from '../interfaces/iPersona';
+
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.html',
@@ -183,11 +184,11 @@ export class MainPageComponent {
     // Reinicializamos this.persona_n1
     // De lo contrario causará error por Referencia
     this.persona_n1 = {
-      run:0,
-      nombres:"",
-      apPaterno:"",
-      apMaterno:"",
-      edad:0,
+      run: this.persona_n1.run,
+      nombres: this.persona_n1.nombres,
+      apPaterno: this.persona_n1.apPaterno,
+      apMaterno: this.persona_n1.apMaterno,
+      edad: this.persona_n1.edad,
 
     }
   }

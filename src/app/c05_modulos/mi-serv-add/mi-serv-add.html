@@ -1,2 +1,22 @@
 <hr>
-<h3>mi-serv-add works!</h3>
+<h3>Sergio que agrega valores a la lista</h3>
+
+<hr>
+<div class="row">
+    <div class="col">
+        <h3>Agregar Servicio</h3>
+        <!-- If ngModel es utilizado sin name
+            cuando no le colocas name al input
+        -->
+        <hr>
+            <!-- importamos FormMoule  agregarSinEvento()-->
+            <form (ngSubmit)="agregarSinEvento()"> 
+                <input type="text" name="run" placeholder="Rut" [(ngModel)]="persona_serv.run"/><br>
+                <input type="text" name="nombres" placeholder="Nombre" [(ngModel)]="persona_serv.nombres" /><br>
+                <input type="text" name="apPaterno" placeholder="Ape.Paterno" [(ngModel)]="persona_serv.apPaterno"/><br>
+                <input type="text" name="apMaterno" placeholder="Ape.Materno" [(ngModel)]="persona_serv.apMaterno"/><br>
+                <input type="text" name="edad" placeholder="Edad" [(ngModel)]="persona_serv.edad"/><br>
+                <button >Agregar</button><br>
+            </form>
+    </div>        
+</div>
